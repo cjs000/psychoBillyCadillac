@@ -1,0 +1,75 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__runWatch console0, Some(13c46838-1116-4ff4-908c-59372c9c307a), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtStashOnFailure, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__preWatch console0, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 5 Scala sources to /home/cjs000/Applications/strawman/target/scala-2.13/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/home/cjs000/Applications/strawman/src/main/scala/Character.scala:13:25: not found: value DirInput[0m
+[0m[[0m[31merror[0m] [0m[0m      case "UpRight" => DirInput.UpRight[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/cjs000/Applications/strawman/src/main/scala/Character.scala:14:27: not found: value DirInput[0m
+[0m[[0m[31merror[0m] [0m[0m      case "DownRight" => DirInput.DownRight[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/cjs000/Applications/strawman/src/main/scala/Character.scala:15:24: not found: value DirInput[0m
+[0m[[0m[31merror[0m] [0m[0m      case "UpLeft" => DirInput.UpLeft[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/cjs000/Applications/strawman/src/main/scala/Character.scala:16:26: not found: value DirInput[0m
+[0m[[0m[31merror[0m] [0m[0m      case "DownLeft" => DirInput.DownLeft[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/cjs000/Applications/strawman/src/main/scala/Character.scala:17:20: not found: value DirInput[0m
+[0m[[0m[31merror[0m] [0m[0m      case "Up" => DirInput.Up[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/cjs000/Applications/strawman/src/main/scala/Character.scala:18:22: not found: value DirInput[0m
+[0m[[0m[31merror[0m] [0m[0m      case "Down" => DirInput.Down[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/cjs000/Applications/strawman/src/main/scala/Character.scala:20:20: recursive variable position needs type[0m
+[0m[[0m[31merror[0m] [0m[0m    var position = position.zipAdd(dirTuple)[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/cjs000/Applications/strawman/src/main/scala/Main.scala:11:6: value step is not a member of characters.Paladin[0m
+[0m[[0m[31merror[0m] [0m[0mpossible cause: maybe a semicolon is missing before `value step`?[0m
+[0m[[0m[31merror[0m] [0m[0m    .step("UpRight")[0m
+[0m[[0m[31merror[0m] [0m[0m     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/cjs000/Applications/strawman/src/main/scala/Main.scala:14:19: value position is not a member of characters.Paladin[0m
+[0m[[0m[31merror[0m] [0m[0m  println(Charlie.position)[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/cjs000/Applications/strawman/src/main/scala/characters/Paladin.scala:3:23: illegal inheritance from final class Character[0m
+[0m[[0m[31merror[0m] [0m[0mclass Paladin extends Character {[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/cjs000/Applications/strawman/src/main/scala/movements/DirInput.scala:8:26: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : (Int, Int, Int)[0m
+[0m[[0m[31merror[0m] [0m[0m required: String[0m
+[0m[[0m[31merror[0m] [0m[0m  val UpRight = Value(2, (0,1,0))[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/cjs000/Applications/strawman/src/main/scala/movements/DirInput.scala:9:28: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : (Int, Int, Int)[0m
+[0m[[0m[31merror[0m] [0m[0m required: String[0m
+[0m[[0m[31merror[0m] [0m[0m  val DownRight = Value(1, (1,0,0))[0m
+[0m[[0m[31merror[0m] [0m[0m                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/cjs000/Applications/strawman/src/main/scala/movements/DirInput.scala:10:26: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : (Int, Int, Int)[0m
+[0m[[0m[31merror[0m] [0m[0m required: String[0m
+[0m[[0m[31merror[0m] [0m[0m  val UpLeft = Value(-1, (-1,0,0))[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/cjs000/Applications/strawman/src/main/scala/movements/DirInput.scala:11:28: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : (Int, Int, Int)[0m
+[0m[[0m[31merror[0m] [0m[0m required: String[0m
+[0m[[0m[31merror[0m] [0m[0m  val DownLeft = Value(-2, (0,-1,0))[0m
+[0m[[0m[31merror[0m] [0m[0m                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/cjs000/Applications/strawman/src/main/scala/movements/DirInput.scala:12:21: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : (Int, Int, Int)[0m
+[0m[[0m[31merror[0m] [0m[0m required: String[0m
+[0m[[0m[31merror[0m] [0m[0m  val Up = Value(3, (0,0,1))[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/cjs000/Applications/strawman/src/main/scala/movements/DirInput.scala:13:24: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : (Int, Int, Int)[0m
+[0m[[0m[31merror[0m] [0m[0m required: String[0m
+[0m[[0m[31merror[0m] [0m[0m  val Down = Value(-3, (0,0,-1))[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m16 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 2 s, completed 22 Jul 2021, 16:52:37[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(resumeFromFailure, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtPopOnFailure, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__postWatch console0, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__waitWatch console0, None, Some(CommandSource(console0)))[0m
