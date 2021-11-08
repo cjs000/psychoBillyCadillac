@@ -1,6 +1,7 @@
 scalaVersion := "2.13.6"
 
-lazy val hello = (project in file("."))
+lazy val root = (project in file("."))
   .settings(
-    name := "Hello"
+    name := "strawman",
   )
+
